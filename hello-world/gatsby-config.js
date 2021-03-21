@@ -4,7 +4,29 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+// // tutorial 03
+//  module.exports = {
+//   plugins: [
+//     {
+//       resolve: `gatsby-plugin-typography`,
+//       options: {
+//         pathToConfigModule: `src/utils/typography`,
+//       },
+//     },
+//   ],
+// }
+
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `White Weasel 놀라워`,
+  },
+  plugins: [
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
 }
